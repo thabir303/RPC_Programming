@@ -3,6 +3,6 @@ const { calculateFactorial } = require('../controllers/factorialController');
 
 const router = express.Router();
 
-router.post('/calculate', calculateFactorial);
+router.post('/', calculateFactorial);
 
 module.exports = router;

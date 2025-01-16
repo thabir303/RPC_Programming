@@ -8,6 +8,6 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-app.use('/factorial', factorialRoutes);
+app.use('/', factorialRoutes);
 
 module.exports = app;

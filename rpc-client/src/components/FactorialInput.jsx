@@ -8,7 +8,7 @@ const FactorialInput = () => {
     const [error, setError] = useState(null);
 
     const handleRequest = async () => {
-        const rpcClient = new RPCClient('http://localhost:4000/factorial/calculate');
+        const rpcClient = new RPCClient('http://10.100.201.33:4000/factorial/calculate');
         try {
             const res = await rpcClient.invoke('factorial', parseInt(input));
             setResult(res.result);
